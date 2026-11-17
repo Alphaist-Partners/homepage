@@ -10,7 +10,10 @@
 }
 .ph-opening .intro__detail{max-width:38ch;margin:0 0 .18em;line-height:1.55;text-wrap:pretty}
 .ph-opening--mission{
-  min-block-size:clamp(22rem,min(43vw,62svh),42rem);
+  --mission-height:clamp(22rem,min(43vw,62svh),42rem);
+  --mission-nav-height:var(--reader-nav-height,var(--anchor-inset));
+  min-block-size:calc(var(--mission-height) + var(--mission-nav-height));
+  padding-block-start:calc(var(--tab-inset) + var(--mission-nav-height));
   background:
     linear-gradient(180deg,rgb(21 18 31 / .67),rgb(21 18 31 / .26) 40%,transparent 72%),
     var(--night) url("assets/mission-at-sea.webp") center 78% / cover no-repeat
@@ -104,7 +107,7 @@
   .ph-opening .intro__copy{grid-template-columns:1fr;gap:.95rem}
   .ph-opening .intro__statement,.team #team-title{font-size:clamp(2rem,8.4vw,3.8rem)}
   .ph-opening--mission{
-    min-block-size:clamp(18rem,47svh,27rem);
+    --mission-height:clamp(18rem,47svh,27rem);
     background-position:center,65% 78%
   }
   .ph-opening--mission .intro__statement{font-size:min(7.35vw,2.35rem)}
@@ -127,7 +130,7 @@
   .philosophy-page .traits .sechead{position:static}
 }
 @media(max-height:500px) and (orientation:landscape){
-  .ph-opening--mission{min-block-size:clamp(13.5rem,65svh,20rem)}
+  .ph-opening--mission{--mission-height:clamp(13.5rem,65svh,20rem)}
   .team{padding-top:1rem}
   .team .sechead{margin-bottom:1rem}
   .team #team-title{font-size:clamp(1.55rem,3.8vw,2.1rem);max-width:none;text-wrap:balance}
