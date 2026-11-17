@@ -385,7 +385,6 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
 /* Portfolio directory */
 .founders{padding-block:var(--tab-inset) var(--section)}
-.ph-opening + .founders{padding-block-start:0}
 .directory-head{
   display:flex;align-items:center;gap:clamp(1rem,2.5vw,2rem);margin-bottom:clamp(1.25rem,2.4vw,2rem)
 }
@@ -395,11 +394,11 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .directory-head .reel__ctrl{gap:.25rem}
   .directory-head .reel__btn{width:2.5rem;height:2.5rem}
 }
-.directory-head h2{
+.directory-head h1{
   font:400 clamp(2.35rem,4.1vw,3.6rem)/1.08 var(--sans);
   letter-spacing:-.03em;color:var(--aubergine)
 }
-@media(max-width:640px){.directory-head h2{font-size:clamp(1.6rem,7.4vw,1.85rem)}}
+@media(max-width:640px){.directory-head h1{font-size:clamp(1.6rem,7.4vw,1.85rem)}}
 .chips{display:flex;flex-wrap:wrap;gap:.3rem 1.3rem;margin-bottom:2rem}
 .chip{padding:.4rem 0;font-size:.91rem;line-height:1.25;color:var(--ink-3);border-bottom:2px solid transparent}
 .chip:hover,.chip:focus-visible,.chip[aria-pressed="true"]{color:var(--ink)}
