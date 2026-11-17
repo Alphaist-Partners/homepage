@@ -27,7 +27,7 @@
   new ResizeObserver(scheduleHero).observe(hero);
   renderHero();
 
-  const elements = document.querySelectorAll('.mission__title, .home-thesis .sechead, .home-thesis .pillar');
+  const elements = document.querySelectorAll('.home-thesis .sechead, .home-thesis .pillar');
   const observer = new IntersectionObserver(entries => {
     for (const entry of entries) {
       if (!entry.isIntersecting) continue;

@@ -8,6 +8,7 @@
       ['team', 'team.html'], ['founding-letter', 'team.html#founding-letter'],
       ['who-we-back', 'philosophy.html#who-we-back'], ['firm', 'philosophy.html#firm'],
       ['judgment', 'philosophy.html#judgment'], ['second','philosophy.html#firm'],
+      ['mission', 'philosophy.html#firm'], ['mission-title', 'philosophy.html#judgment'],
       ['founder-criteria','philosophy.html#founder-criteria'], ['traits-title','philosophy.html#who-we-back'],
       ['stories-title','stories.html'], ['podcast-heading','stories.html#podcasts'], ['team-title','team.html'],
       ['selected-heading','founders.html'], ['founders-title','founders.html'], ['companies-heading','founders.html#all-companies'],

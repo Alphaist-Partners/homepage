@@ -20,7 +20,6 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Alphaist_VC">
 <style>
-  .mission__sea { filter:url(#sea-at-dusk); }
   @view-transition { navigation: auto; }
   @media (prefers-reduced-motion: reduce) { @view-transition { navigation: none; } }
 </style>
@@ -49,33 +48,6 @@
   <div class="hero__inner wrap">
     <h1 class="hero__title slogan" id="hero-title"><span>Before the crowd</span> <span>believes.</span></h1>
     <p class="hero__sector">Backing global AI and robotics pioneers.</p>
-  </div>
-</section>
-<section class="mission" id="mission" aria-labelledby="mission-title">
-  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
-    <defs>
-      <filter id="sea-at-dusk" color-interpolation-filters="sRGB" x="0" y="0" width="100%" height="100%">
-        <!-- Keep the cool dusk grade. Blend the original light back into warm highlights. -->
-        <feColorMatrix type="matrix" result="dusk" values="
-          .47148 .53923 .06114 0 0
-          .16210 .81803 .05797 0 0
-          .14776 .47604 .35366 0 0
-          0 0 0 1 0"/>
-        <feColorMatrix in="SourceGraphic" type="matrix" result="sunlight" values="
-          1 0 0 0 .015
-          0 1.02 0 0 .025
-          0 0 1 0 0
-          2.15 .60 -1.90 0 -.35"/>
-        <feMerge>
-          <feMergeNode in="dusk"/>
-          <feMergeNode in="sunlight"/>
-        </feMerge>
-      </filter>
-    </defs>
-  </svg>
-  <img class="mission__sea" src="assets/mission-at-sea.webp" width="1920" height="1080" alt="" loading="lazy" decoding="async">
-  <div class="wrap mission__inner">
-    <h2 class="mission__title slogan" id="mission-title"><span>Empower alpha founders,</span> <span>propel humanity forward.</span></h2>
   </div>
 </section>
 <section class="thesis home-thesis" id="thesis" aria-labelledby="thesis-heading">

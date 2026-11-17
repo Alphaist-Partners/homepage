@@ -185,7 +185,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   min-height:100vh;min-height:100dvh;padding-block:8rem max(clamp(3.25rem,8.5vh,6.5rem),env(safe-area-inset-bottom))
 }
 .hero__title{font-size:clamp(3.5rem,6.85vw,6.25rem);line-height:.99;letter-spacing:-.036em;color:var(--paper)}
-.hero__title span,.mission__title span{display:block}
+.hero__title span{display:block}
 .hero__sector{font-size:clamp(1.06rem,1.55vw,1.4rem);line-height:1.3;color:#e2dde9;letter-spacing:-.012em}
 @media(max-width:760px){
   .hero__inner{gap:1.2rem;padding-bottom:max(7dvh,2.3rem)}
@@ -311,25 +311,12 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
 
 
-/* Two independent reading panels following the landing. */
-.mission,.home-thesis{
+/* Investment thesis after the homepage hero. */
+.home-thesis{
   min-height:100vh;min-height:100svh;display:grid;align-items:center;
-  scroll-margin-top:calc(0px - var(--anchor-inset));color:var(--aubergine)
+  scroll-margin-top:calc(0px - var(--anchor-inset));color:var(--aubergine);
+  background:var(--paper);padding-block:clamp(3rem,9svh,7rem)
 }
-.mission{position:relative;isolation:isolate;overflow:hidden;background:var(--night);color:var(--paper)}
-.mission__sea{
-  position:absolute;inset:auto 0 0;width:100%;height:100%;z-index:-1;
-  object-fit:cover;object-position:65% 78%;
-  mask-image:linear-gradient(to bottom,transparent 18%,rgb(0 0 0 / .3) 37%,rgb(0 0 0 / .86) 65%,#000 80%)
-}
-.mission__inner{padding-block:clamp(2.6rem,5svh,4.4rem) clamp(6rem,27svh,19rem)}
-.mission__title{font-size:clamp(1.4rem,5.05vw,4.65rem);line-height:1.07;letter-spacing:-.036em}
-@media(max-aspect-ratio:4/5){
-  .mission__sea{height:min(100%,160vw);object-position:74% bottom}
-  .mission__inner{padding-block:3rem 26svh}
-  .mission__title{font-size:clamp(1.4rem,7.35vw,3.7rem)}
-}
-.home-thesis{background:var(--paper);padding-block:clamp(3rem,9svh,7rem)}
 .home-thesis .sechead{margin-bottom:clamp(2.6rem,7.2svh,5.5rem);container-type:inline-size}
 .thesis__more{margin-top:clamp(2.4rem,5vw,4rem)}
 .thesis__label{font:500 clamp(1.05rem,1.5vw,1.3rem)/1.3 var(--sans);margin-bottom:1.1rem}
