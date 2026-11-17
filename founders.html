@@ -41,10 +41,20 @@
     <a class="nav__cta" href="#contact">Contact <span aria-hidden="true">↓</span></a>
   </div>
 </header>
-<main id="main"><script>const legacySections = {"#companies-heading":"#all-companies","#all-title":"#all-companies","#selected-heading":"#founders-title"}; if (legacySections[location.hash]) location.replace(legacySections[location.hash]);</script><section class="founders" id="founders" aria-labelledby="portfolio-title">
+<main id="main">
+<script>const legacySections = {"#companies-heading":"#all-companies","#all-title":"#all-companies","#selected-heading":"#founders-title"}; if (legacySections[location.hash]) location.replace(legacySections[location.hash]);</script>
+<section id="founders-intro" class="ph-opening" aria-labelledby="founders-intro-title">
+  <div class="wrap">
+    <div class="intro__copy">
+      <h1 id="founders-intro-title" class="intro__statement slogan"><span>An engineer’s taste.</span> <span>An investor’s eye.</span></h1>
+      <p class="intro__detail">We recognise exceptional builders early — and back them before consensus forms.</p>
+    </div>
+  </div>
+</section>
+<section class="founders" id="founders" aria-labelledby="portfolio-title">
   <div class="wrap">
     <header class="directory-head" id="founders-title">
-      <h1 id="portfolio-title">Founders we back</h1>
+      <h2 id="portfolio-title">Founders we back</h2>
       <div class="reel__ctrl" hidden>
         <button type="button" class="reel__btn" data-reel-prev aria-label="Previous founder">←</button>
         <button type="button" class="reel__btn" data-reel-next aria-label="Next founder">→</button>
@@ -132,7 +142,7 @@
       </ul>
     </div>
 
-    <h2 class="directory-title" id="all-companies">All companies</h2>
+    <h3 class="directory-title" id="all-companies">All companies</h3>
     <div class="chips" role="group" aria-label="Filter companies by field" data-chips hidden>
       <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
       <button type="button" class="chip" data-filter="creative" aria-pressed="false">Creative AI</button>
@@ -221,7 +231,7 @@
           <img class="all__thumb" src="assets/companies/tangiblefuture.webp" alt="" width="120" height="80" loading="lazy" decoding="async">
           <span class="all__co">TangibleFuture</span>
           <span class="all__f">Companion robots</span>
-          <span class="all__who">Gray Zhang &amp; Wei You</span>
+          <span class="all__who">Gray Zhang</span>
         </a>
       </li>
       <li id="voyax" data-field="everyday">
