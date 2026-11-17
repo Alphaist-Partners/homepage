@@ -455,7 +455,6 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
 .crew{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(1.25rem,2.5vw,2.5rem);padding-top:clamp(3rem,6vw,5rem)}
 .crew img{width:100%;max-width:252px;height:auto;aspect-ratio:1;object-fit:cover;object-position:50% 19%;border-radius:3px;margin-bottom:1.1rem}
-.crew img[src$="yang-portrait.webp"]{object-position:center top}
 .crew img[src$="matthew-portrait.webp"]{object-position:50% 8%}
 .lead__photo,.crew img{background:linear-gradient(125deg,#dfddd7,var(--portrait-ground) 48%,var(--portrait-shade))}
 .crew h2{font:500 1.15rem/1.25 var(--sans)}
